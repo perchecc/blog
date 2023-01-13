@@ -9,6 +9,7 @@ module.exports = {
     ],
     ["meta", { name: "author", content: "桃子" }],
   ],
+  // base: "/blog/",
   themeConfig: {
     // 网站logo
     logo: "/assets/img/logo.png",
