@@ -1,3 +1,4 @@
+const secret = require("./secret");
 module.exports = [
     [
         "@vuepress/pwa",
@@ -14,8 +15,8 @@ module.exports = [
             // 其他的 Vssue 配置
             owner: "perchecc",
             repo: "blog",
-            clientId: "1be1a6ba4677a1482461", // github这个auth app里找 https://github.com/settings/applications/2086455
-            clientSecret: "16176a02f401c4ae49e00ebb48f35237cc10f2f8",
+            clientId: secret.clientId, // github这个auth app里找 https://github.com/settings/applications/2086455
+            clientSecret: secret.clientSecret,
             autoCreateIssue: true, // 自动创建issue
         },
     ],
@@ -23,7 +24,7 @@ module.exports = [
     [
         "@vuepress/google-analytics",
         {
-            ga: "G-XFD6NQ1FQ8",
+            ga: secret.ga,
         },
     ],
 ];
