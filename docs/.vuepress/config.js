@@ -1,7 +1,8 @@
-const headConf = require('./config/head.conf')
-const pluginsConf = require('./config/plugins.conf')
-const navConf = require('./config/nav.conf');
-const sidebarConf = require('./config/sidebar.conf');
+const headConf = require("./config/head.conf");
+const pluginsConf = require("./config/plugins.conf");
+const navConf = require("./config/nav.conf");
+const sidebarConf = require("./config/sidebar.conf");
+// const secret = require("./config/secret");
 
 module.exports = {
     title: "桃子pêche",
@@ -16,6 +17,7 @@ module.exports = {
         nav: navConf,
         // 侧边栏
         sidebar: sidebarConf,
+        // displayAllHeaders: true,
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
         repo: "https://github.com/perchecc/blog",
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
@@ -29,5 +31,11 @@ module.exports = {
         editLinks: true,
         // 默认为 "Edit this page"
         editLinkText: "帮助我们改善此页面！",
+        // algolia: {
+        //     apiKey: secret.apiKey,
+        //     indexName: "<INDEX_NAME>",
+        //     // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
+        //     appId: secret.appId,
+        // },
     },
 };

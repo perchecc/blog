@@ -27,4 +27,5 @@ module.exports = [
             ga: secret.ga,
         },
     ],
+    ['@vuepress/nprogress']
 ];
