@@ -1,5 +1,4 @@
 ---
-navbar: false
 sidebar: auto
 title: 关于我
 ---
