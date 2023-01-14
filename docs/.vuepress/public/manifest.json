@@ -1,0 +1,14 @@
+{
+    "name": "桃子pêche",
+    "description": "桃子的博客，记录前端成长路",
+    "start_url": "/",
+    "lang": "zh-CN",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/assets/img/logo.png",
+            "sizes": "192×192",
+            "type": "image/png"
+        }
+    ]
+}
