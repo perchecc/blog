@@ -8,13 +8,23 @@ module.exports = {
 
     // 前端-小程序
     // 前端-小程序-微信小程序
-    "/frontend/miniprogram/wexin/": ["1", "2"],
+    "/frontend/miniprogram/weixin/": ["1", "2"],
+    // 前端-小程序-字节小程序
+    "/frontend/miniprogram/byte/": [],
 
     // 前端-微信公众号
-    "/frontend/miniprogram/offiaccount/": ["1"],
+    "/frontend/offiaccount/": ["1"],
+
+    // 前端-css架构
+    "/frontend/css/": ["1"],
 
     // 前端-node
     "/frontend/node/": [""],
+
+    // 职业经验
+    // 职业经验 - 项目管理
+    // 职业经验 - 项目管理 - pmp考试
+    "/career-experience/pm/pmp/": ["start"],
 
     // 网络运维
     // 网络运维-linux

@@ -21,14 +21,14 @@ module.exports = [
                 ],
             },
             {
-                text: "微信公众号",
-                link: "/frontend/miniprogram/offiaccount/",
-                items: [{ text: "微信公众号", link: "/frontend/miniprogram/offiaccount/" }],
+                text: "公众号",
+                link: "/frontend/offiaccount/",
+                items: [{ text: "微信公众号", link: "/frontend/offiaccount/" }],
             },
             {
                 text: "CSS",
                 link: "/frontend/css/",
-                items: [{ text: "CSS", link: "/frontend/css/" }],
+                items: [{ text: "CSS架构", link: "/frontend/css/" }],
             },
             { text: "NodeJS", link: "/frontend/node/", items: [{ text: "NodeJS", link: "/frontend/node/" }] },
         ],
@@ -63,9 +63,7 @@ module.exports = [
             {
                 text: "jenkins",
                 link: "/OM/jenkins/",
-                items: [
-                    { text: "jenkins", link: "/OM/jenkins/" },
-                ],
+                items: [{ text: "jenkins起步", link: "/OM/jenkins/start/" }],
             },
         ],
     },
