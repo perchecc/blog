@@ -1,4 +1,4 @@
-baseURL = 'https://localhost:1313'
+baseURL = 'https://blog-ochre-pi.vercel.app/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'github'
