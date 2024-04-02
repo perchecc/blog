@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>前端s on Perche&#39;s blog</title>
+    <link>http://localhost:1313/%E5%89%8D%E7%AB%AF/</link>
+    <description>Recent content in 前端s on Perche&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/%E5%89%8D%E7%AB%AF/%E6%88%90%E5%B0%B1%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/%E5%89%8D%E7%AB%AF/%E6%88%90%E5%B0%B1%E8%AE%B0%E5%BD%95/</guid>
+      <description>目标记录表 已完成 :trophy: 学习vitepress，并部署到vercel静态托管平台 :date:2024/01/24 进行中 :construction: nodejs学习，拆解目标来学习nodejs&#xA;学习mongodb&#xA;技术调研 - word变量替换&#xA;docx https://github.com/dolanmiu/docx&#xA;docxtemplater 根据模板中变量替换数据，并导出新的doc文件 https://juejin.cn/post/7278247059517210643&#xA;未完成 :question: 学会微前端基础，并应用到项目中 学习gsap动画平台 学习ts 学习web服务的nginx配置 echart dataset 学习 系列 行 列 含义 alova 替代axios的可能性 vue sso（单点登录）解决方案 vue-keycloak lerna monorepo(可以参考 monorepo的解决方案 lerna,或者使用最方便的方法 pnpm自带的monorepo) 学习amd，cmd等编码规范 </description>
+    </item>
+  </channel>
+</rss>

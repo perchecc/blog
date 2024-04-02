@@ -1,25 +1,30 @@
-baseURL = 'https://b.perche.cc'
+baseURL = 'http://localhost:1313'
 languageCode = "zh-cn"
 title = "Perche's blog"
-theme = "github"
+theme = "githubplus"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
-[params]
-  author = "Perche"
-  description = "记得越多，回忆越甜."
-  email = "perchecc@163.com"
-  keywords = "blog, google analytics"
-  favicon = "/images/github.png"
-  avatar = "/images/avatar.jpg"
-  headerIcon = "/images/GitHub-Mark-Light-32px.png"
-  location = "Nanjing.China"
-  userStatusEmoji = "😀"
 
-  [[params.links]]
-    title = "Jenkins"
-    href = "https://jenkins.perche.cc/"
-    icon = "https://jenkins.perche.cc/static/dc18ed95/images/svgs/logo.svg"
+[params]
+author = "Perche"
+description = "记得越多，回忆越甜."
+email = "perchecc@163.com"
+keywords = "blog, google analytics"
+favicon = "/images/github.png"
+avatar = "/images/avatar.jpg"
+headerIcon = "/images/GitHub-Mark-Light-32px.png"
+location = "Nanjing.China"
+userStatusEmoji = "😀"
+sponsorLink = "https://www.buymeacoffee.com/vermouth02D"
+github = "perche"
+enableGithubFollowers = true
+
+
+[[params.links]]
+title = "Jenkins"
+href = "https://jenkins.perche.cc/"
+icon = "https://jenkins.perche.cc/static/dc18ed95/images/svgs/logo.svg"
 
 [frontmatter]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+lastmod = ["lastmod", ":fileModTime", ":default"]
