@@ -1,4 +1,4 @@
 baseURL = 'https://b.perche.cc/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'github'
+languageCode = 'zh-cn'
+title = 'Perche's 日常'
+theme = 'cactus'
