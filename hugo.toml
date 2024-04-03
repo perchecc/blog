@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313'
+baseURL = "${BASE_URL}"
 languageCode = "zh-cn"
 title = "Perche's blog"
 theme = "githubplus"
