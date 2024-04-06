@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "deploy": "npm run clean && npm run build && hexo deploy",
+    "deploy2": "npm run clean && npm run build && hexo deploy",
     "server": "hexo server",
     "build": "hexo generate",
-    "clean": "hexo clean"
+    "clean": "hexo clean",
+    "deploy": "hexo deploy"
   },
   "hexo": {
     "version": "6.3.0"
