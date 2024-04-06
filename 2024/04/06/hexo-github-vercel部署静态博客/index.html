@@ -14,7 +14,7 @@
 <meta property="og:description" content="之前折腾了很久的博客，建了wordpress，vuepress，vitepress，hugo。最后觉得还是返璞归真，考虑用vercel去部署静态站点，这样就可以避免自己服务器天天折腾导致的博客无法访问问题，只需要有个域名就可以了。博客文件用github做存储就行了。至于图床，还是用便宜的七牛云啦，加个防盗链就可以防止流量盗刷啦。   emmm,这些以后再说，还是开始正事，看看hexo部署到ver">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-04-06T06:59:41.000Z">
-<meta property="article:modified_time" content="2024-04-06T07:14:56.214Z">
+<meta property="article:modified_time" content="2024-04-06T08:15:50.226Z">
 <meta property="article:author" content="perchecc">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="github">
@@ -116,13 +116,13 @@
 </blockquote>
 <h2 id="安装hexo-cli脚手架工具"><a href="#安装hexo-cli脚手架工具" class="headerlink" title="安装hexo-cli脚手架工具"></a>安装hexo-cli脚手架工具</h2><p>这块直接参考 <code>hexo</code> 官网即可 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/"></a></p>
 <h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>这块直接参考 <code>hexo</code> 官网即可 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/setup"></a></p>
-<h2 id="部署到Vercel"><a href="#部署到Vercel" class="headerlink" title="部署到Vercel"></a><a href="about:blank#%E9%83%A8%E7%BD%B2%E5%88%B0Vercel" title="部署到Vercel"></a>部署到Vercel</h2><p>首先到Github创建一个仓库，public和private都可以，对仓库没有任何要求</p>
+<h2 id="部署到Vercel"><a href="#部署到Vercel" class="headerlink" title="部署到Vercel"></a>部署到Vercel</h2><p>首先到Github创建一个仓库，public和private都可以，对仓库没有任何要求</p>
 <p>然后到<code>blog/_config.yml</code>中，找到deploy，修改一下</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type:git</span><br><span class="line"> repo:仓库地址，https或者ssh地址都可以</span><br><span class="line"> branch: main</span><br></pre></td></tr></table></figure>
 
 
 <p>安装 hexo-deployer-git</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <p>执行以下命令，将生成的静态文件上传到GitHub上</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #清除缓存文件(db.json)和已生成的博客缓存</span><br><span class="line">hexo generate #生成静态文件</span><br><span class="line">hexo deploy #部署网站</span><br></pre></td></tr></table></figure>
@@ -137,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.perche.cc/2024/04/06/hexo-github-vercel%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" data-id="cluns3t09000c50nnf1ye3vrg" data-title="hexo+github+vercel部署静态博客" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://b.perche.cc/2024/04/06/hexo-github-vercel%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" data-id="cluntms8x000cbcnn2901a9zb" data-title="hexo+github+vercel部署静态博客" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -159,9 +159,9 @@
     </a>
   
   
-    <a href="/2024/04/06/%E9%BA%BB%E8%BE%A3%E7%89%9B%E8%82%89/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2024/04/06/%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title"></div>
+      <div class="article-nav-title">图床工具PicGo的使用经验</div>
     </a>
   
 </nav>
@@ -178,7 +178,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a></li></ul>
     </div>
   </div>
 
@@ -188,7 +188,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vercel/" rel="tag">vercel</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PicGo/" rel="tag">PicGo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vercel/" rel="tag">vercel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E5%BA%8A/" rel="tag">图床</a></li></ul>
     </div>
   </div>
 
@@ -198,7 +198,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/vercel/" style="font-size: 10px;">vercel</a>
+      <a href="/tags/PicGo/" style="font-size: 10px;">PicGo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/vercel/" style="font-size: 10px;">vercel</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 10px;">图床</a>
     </div>
   </div>
 
@@ -228,15 +228,15 @@
           </li>
         
           <li>
+            <a href="/2024/04/06/%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7/">图床工具PicGo的使用经验</a>
+          </li>
+        
+          <li>
             <a href="/2024/04/06/%E9%BA%BB%E8%BE%A3%E7%89%9B%E8%82%89/">(no title)</a>
           </li>
         
           <li>
             <a href="/2024/04/06/%E9%B2%AB%E9%B1%BC%E8%B1%86%E8%85%90%E6%B1%A4/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2024/04/06/%E9%9D%92%E5%B2%9B%E5%B0%8F%E8%8A%B1%E8%9B%A4/">(no title)</a>
           </li>
         
       </ul>
