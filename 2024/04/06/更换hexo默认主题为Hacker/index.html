@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>更换hexo默认主题为Hacker | life is like a boat | 生活像一叶扁舟，我们得不断前进</title>
+
+  
+  <meta name="author" content="perchecc">
+  
+
+  
+  <meta name="description" content="生活像一叶扁舟，我们得不断前进">
+  
+
+  
+  <meta name="keywords" content="blog">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="更换hexo默认主题为Hacker"/>
+
+  <meta property="og:site_name" content="life is like a boat"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="life is like a boat" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">life is like a boat</a>
+    </h1>
+    <p class="site-description">生活像一叶扁舟，我们得不断前进</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/tags">标签</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>更换hexo默认主题为Hacker</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2024/04/06/更换hexo默认主题为Hacker/" rel="bookmark">
+        <time class="entry-date published" datetime="2024-04-06T11:49:42.000Z">
+          2024-04-06
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>自带的主题不太喜欢，找了半天找到了一款简约的主题，叫 Hacker，效果如下：</p>
+<p><img src="https://blog.perche.cc/202404062008729.png-blogmask"></p>
+<span id="more"></span>
+
+<h2 id="下载主题包"><a href="#下载主题包" class="headerlink" title="下载主题包"></a>下载主题包</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/CodeDaraW/Hacker</span><br></pre></td></tr></tbody></table></figure>
+
+<p>或者 直接去 github 下载 zip 包解压</p>
+<h2 id="安装主题包"><a href="#安装主题包" class="headerlink" title="安装主题包"></a>安装主题包</h2><p>在 themes 文件夹下新建一个文件夹，命名为 Hacker，把下载的主题包解压到该文件夹下</p>
+<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>配置文件最好在根目录新建一份以主题名命名的文件，例如：_config.Hacker.yml，它会覆盖_config.yml 文件</p>
+<p>添加以下内容：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  Home: /</span><br><span class="line">  Archives: /archives</span><br><span class="line">  Categories: /categories</span><br><span class="line">  Tags: /tags</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h2><p>修改_config.yml 配置文件，将 theme 字段修改为 Hacker</p>
+<h2 id="为目录添加页面"><a href="#为目录添加页面" class="headerlink" title="为目录添加页面"></a>为目录添加页面</h2><p>添加书签页面</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后修改书签页面,添加布局</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">layout: "tags"</span><br></pre></td></tr></tbody></table></figure>
+
+<p><code>分类</code>和<code>归档</code>同理,也处理一下。</p>
+<p>然后重新运行<code>hexo server</code>就可以了。</p>
+<p>:tips: 注意：如果主题没有生效，可以运行<code>hexo clean</code>，然后重新启动。</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/hexo/">hexo</a>
+    </span>
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/hexo/">hexo</a><a href="/tags/theme/">theme</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2024 perchecc
+    
+  </p>
+</footer>
+    
+    
+  </div>
+</div>
+</body>
+</html>
