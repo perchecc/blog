@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>life is like a boat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="如果你遇到过刚制作的U盘启动盘无法启动，或者新买的固态硬盘做好系统后无法启动，那么大概率的问题就出现在BIOS的引导模式的选择上，是UEFI还是Legacy。本文将全面解析2种启动模式。 什么是BIOS？ BlOS（Basic Input Output System）称为“基本输出输入系统”，是用于为操作系统和程序提供运行时服务以及在启动过程（开机启动）期间执行硬件初始化的固件。BIOS初始化和测">
+<meta property="og:type" content="article">
+<meta property="og:title" content="life is like a boat">
+<meta property="og:url" content="https://b.perche.cc/2024/04/06/%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82Legacy%20%E5%92%8C%20UEFI%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%8C%E5%88%B0%E5%BA%95%E9%80%89%E6%8B%A9%E5%93%AA%E4%B8%80%E4%B8%AA%EF%BC%9F/index.html">
+<meta property="og:site_name" content="life is like a boat">
+<meta property="og:description" content="如果你遇到过刚制作的U盘启动盘无法启动，或者新买的固态硬盘做好系统后无法启动，那么大概率的问题就出现在BIOS的引导模式的选择上，是UEFI还是Legacy。本文将全面解析2种启动模式。 什么是BIOS？ BlOS（Basic Input Output System）称为“基本输出输入系统”，是用于为操作系统和程序提供运行时服务以及在启动过程（开机启动）期间执行硬件初始化的固件。BIOS初始化和测">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-04-06T06:46:38.138Z">
+<meta property="article:modified_time" content="2024-04-01T14:59:13.061Z">
+<meta property="article:author" content="perchecc">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="life is like a boat" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">life is like a boat</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">we need to keep moving</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://b.perche.cc"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-一文读懂Legacy 和 UEFI的区别，到底选择哪一个？" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/04/06/%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82Legacy%20%E5%92%8C%20UEFI%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%8C%E5%88%B0%E5%BA%95%E9%80%89%E6%8B%A9%E5%93%AA%E4%B8%80%E4%B8%AA%EF%BC%9F/" class="article-date">
+  <time class="dt-published" datetime="2024-04-06T06:46:38.138Z" itemprop="datePublished">2024-04-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>如果你遇到过刚制作的U盘启动盘无法启动，或者新买的固态硬盘做好系统后无法启动，那么大概率的问题就出现在BIOS的引导模式的选择上，是UEFI还是Legacy。本文将全面解析2种启动模式。</p>
+<p>什么是BIOS？</p>
+<p>BlOS（Basic Input Output System）称为“基本输出输入系统”，是用于为操作系统和程序提供运行时服务以及在启动过程（开机启动）期间执行硬件初始化的固件。<br>BIOS初始化和测试系统硬件组件（开机自检），并从大容量存储设备加载引导加载程序，然后初始化内核。</p>
+<p>UEFI&#x2F;BIOS 启动模式</p>
+<p>什么是Legacy启动模式？</p>
+<p>legacy启动模式是指BIOS 固件用来初始化硬件设备的引导过程，Legacy启动模式包含一系列已安装的设备，这些设备在引导过程中计算机执行 POST （开机自检）测试时会被初始化。传统引导将检查所有连接设备的主引导记录 (MBR)，通常位于磁盘的第一个扇区。<br>当它在设备中找不到引导加载程序时，Legacy会切换到列表中的下一个设备并不断重复此过程，直到找到引导加载程序，否则返回错误。</p>
+<p>什么是 UEFI启动模式？</p>
+<p>UEFI（统一可扩展固件接口）是一个公开的规范，定义了操作系统和平台固件之间的软件接口。UEFI 是传统 PC BIOS 的继承者，旨在解决其技术限制。<br>它将引导数据存储在 .efi 文件中，而不是固件中。你经常会在新款的主板中找到 UEFI 启动模式。UEFI 启动模式包含一个特殊的 EFI 分区，用于存储 .efi 文件并用于引导过程和引导加载程序。</p>
+<p>UEFI使用GPT的分区引导方案，支持更大的硬盘。由于省去了BIOS自检的过程，所以启动速度更快。</p>
+<p>EFI 启动管理器和 EFI 驱动程序之间的交互</p>
+<p>UEFI和Legacy有什么不同？</p>
+<p>虽然，UEFI 和 Legacy 非常相似。但是，在更深层次上，他们是有很多不同的</p>
+<p>UEFI 引导模式 Legacy引导模式<br>UEFI 提供了更好的用户界面 Legacy引导模式是传统的且非常基本的<br>使用 GPT 分区方案 使用 MBR 分区方案<br>UEFI 提供更快的启动时间 相比UEFI，它的速度较慢<br>由于 UEFI 使用 GPT 分区方案，因此它可以支持多达 9 zB 的存储设备 Legacy使用的 MBR 分区方案仅支持最多 2 TB 存储设备<br>UEFI 以 32 位和 64 位运行，支持鼠标和触摸板 Legacy在仅支持键盘，仅 16 位模式下运行<br>它允许安全启动，防止加载未经授权的应用程序它还可能阻碍双启动，因为它将操作系统（OS）视为应用程序 它不提供允许加载未经授权的应用程序的安全启动方法，未限制双启动<br>它具有更简单的更新过程 与UEFI相比，它更复杂</p>
+<p>如何查看自己的电脑是哪种模式？</p>
+<p>1，按下快捷键WIN + R 或者点击开始菜单，输入运行<br>2，在弹出的运行窗口中，输入“msinfo32”<br>3，在系统信息中，找到BIOS模式，即可看到本机的BIOS模式信息<br>同样这个命令可以查询到本机中的各种信息</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://b.perche.cc/2024/04/06/%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82Legacy%20%E5%92%8C%20UEFI%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%8C%E5%88%B0%E5%BA%95%E9%80%89%E6%8B%A9%E5%93%AA%E4%B8%80%E4%B8%AA%EF%BC%9F/" data-id="clunqh24f000faonn7ze44f4r" data-title="" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/04/06/%E4%B8%8D%E5%90%83%E7%9A%84/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/04/06/vscode%E5%AE%89%E8%A3%85springboot%E7%8E%AF%E5%A2%83/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">四月 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/04/06/%E9%BA%BB%E8%BE%A3%E7%89%9B%E8%82%89/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/04/06/%E9%B2%AB%E9%B1%BC%E8%B1%86%E8%85%90%E6%B1%A4/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/04/06/%E9%9D%92%E5%B2%9B%E5%B0%8F%E8%8A%B1%E8%9B%A4/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/04/06/%E9%99%84%E8%BF%91%E9%A4%90%E9%A6%86%E8%8F%9C%E5%8D%95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/04/06/%E9%85%B8%E8%BE%A3%E5%9C%9F%E8%B1%86%E4%B8%9D-%E5%B0%8F%E9%AB%98%E5%A7%90/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 perchecc<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
