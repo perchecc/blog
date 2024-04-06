@@ -24,7 +24,7 @@ categories:
 
 这块直接参考 `hexo` 官网即可 [](https://hexo.io/zh-cn/docs/setup)
 
-[](about:blank#%E9%83%A8%E7%BD%B2%E5%88%B0Vercel "部署到Vercel")部署到Vercel
+部署到Vercel
 ----------------------------------------------------------------------
 
 首先到Github创建一个仓库，public和private都可以，对仓库没有任何要求
@@ -42,7 +42,7 @@ deploy:
 安装 hexo-deployer-git
 
 ```
-npm install hexo -deployer-git --save
+npm install hexo-deployer-git --save
 ```
 
 执行以下命令，将生成的静态文件上传到GitHub上
