@@ -1,13 +1,12 @@
 ---
-title = vscode 安装 springboot 项目环境
-date = 2024-04-02T21:53:55+08:00
+title: vscode 安装 springboot 项目环境
+date: 2024-04-02T21:53:55+08:00
 ---
 
 > 作为一个前端仔，有时候要写一些基于 java 环境的 springboot 项目，这时候 vscode 配置环境需要折腾好一会。
->
 > 特地记录安装过程的经验，保证下次安装时快速搞定
 
-[TOC]
+<!--more-->
 
 ## 安装 vscode 插件
 
