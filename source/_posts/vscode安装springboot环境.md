@@ -1,9 +1,7 @@
-+++
-title = 'Vscode安装springboot环境'
+---
+title = vscode 安装 springboot 项目环境
 date = 2024-04-02T21:53:55+08:00
-+++
-
-# vscode 安装 springboot 项目环境
+---
 
 > 作为一个前端仔，有时候要写一些基于 java 环境的 springboot 项目，这时候 vscode 配置环境需要折腾好一会。
 >
@@ -21,7 +19,7 @@ date = 2024-04-02T21:53:55+08:00
 
 ## 用 maven 下载项目依赖
 
-## 启动项目，成功！
+## 启动项目，成功
 
 ### 常见错误
 
