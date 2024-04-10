@@ -34,10 +34,6 @@ categories:
 
 [官网下载地址](https://rufus.ie/)
 
-> 附上快捷安装包（各位自用即可，不要传播，oss下载流量耗不起）
->
-> [`rufus-4.4`的安装包](https://blog.perche.cc/202404101128024.exe-blogmask)
-
 执行rufus.exe开始安装
 ---
 
